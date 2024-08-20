@@ -1,0 +1,25 @@
+{
+  "name": "graduation_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --reporter=allure-playwright",
+    "ui": "playwright test --ui",
+    "allure:reporter": "npx allure generate ./allure-results --clean && allure open ./allure-report",
+    "allure:open": "npx allure serve ./allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.46.0",
+    "@types/node": "^22.2.0",
+    "allure-commandline": "^2.30.0",
+    "allure-playwright": "^3.0.0-beta.10"
+  },
+  "dependencies": {
+    "@types/superagent": "^8.1.8",
+    "superagent": "^9.0.2"
+  }
+}
